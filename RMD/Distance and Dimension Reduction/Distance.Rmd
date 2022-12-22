@@ -90,3 +90,7 @@ To visualize all the distances, we can use the image function:
 ``` {r}
 image(as.matrix(d))
 ```
+
+
+## Distance Reduction Motivation
+An important technique is dimension reduction. Oftentimes, it's important to reduce dimensions without losing data. Sometimes, when we have high throughput experiment data, we have many genes and many samples and if we want to examine the relationship between them all, it can get quite challenging. Dimension reduction can help make it easier and help perform data exploration. 
