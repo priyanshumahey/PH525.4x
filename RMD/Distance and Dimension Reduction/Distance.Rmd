@@ -1,0 +1,29 @@
+---
+title: "Distance"
+output: html_notebook
+---
+## Distance
+
+**Distance** is defined as a value that permits us to say what animals are "close" to each other. A lot of analysis requires a good understanding of distance, especially when it comes to clustering or ML.
+
+## Euclidean Distance
+Euclidean Distance is the distance in a Euclidean space.
+
+![Euclidean Distance](EucDist.png)
+
+The distance here is just $\sqrt{(A_{x}-B_{x})^{2}+(A_{y}-B_{y})^2}$
+
+For high dimensional data, we can't exactly rely on this method.
+
+
+```{r options, echo=FALSE}
+library(devtools)
+install_github("genomicsclass/tissuesGeneExpression")
+library(tissuesGeneExpression)
+data(tissuesGeneExpression)
+dim(e) ##e contains the expression data
+```
+
+```{r}
+table(tissue)
+```
